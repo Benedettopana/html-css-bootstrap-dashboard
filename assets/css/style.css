@@ -46,7 +46,7 @@
 }
 .bp-container{
   /* width: 92%; */
-  margin-left: 100px;
+  margin-left: 105px;
 }
 
 .aside-container{
@@ -56,6 +56,10 @@
 
 .v-al-mid{
   vertical-align: middle;
+}
+
+.aside-font{
+  font-size: .9rem;
 }
 /* /UTILITY */
 
@@ -103,6 +107,10 @@ header{
   width: 30px;
 }
 
+.admin{
+  height: 80%;
+}
+
 /* .search-bar{
   width: 75%;
 } */
@@ -123,7 +131,7 @@ header{
 
 .aside-menu .aside-container .row{
   height: 90%;
-  width: 124px;
+  width: 130px;
 }
 /* /MENU ASIDE */
 
