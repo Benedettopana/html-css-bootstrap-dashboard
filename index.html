@@ -23,25 +23,60 @@
   <header>
     <section class="fixed-top">
       <nav class="navbar bg-body-tertiary h-100">
-        <div class="container-fluid h-100">
+        <div class="container-fluid h-100 bg-white">
+          <div class="row row-cols-3 align-items-center justify-content-between    w-100 ">
+
+            <div class="col-1">
+              <div class="logo-section">
+                <div class="logo-desktop">
+                  <img class="hide d-md-block object-fit-contain  " src="./assets/img/logo.svg" alt="">
+                </div>
+                <div class="logo-small">
+                  <img class="d-md-none object-fit-contain " src="./assets/img/mobile-logo.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-8 offset-1 ">
+              <form class="search-bar d-flex w-100 " role="search">
+                <!-- label -->
+                
+                <label class="form-control-label p-2 " for=""><i class="fa-solid fa-magnifying-glass fs-6"></i></label>
+                <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+              </form>
+            </div>
+            <div class="col-2">
+              <div class="icon-section d-flex justify-content-between ">
+                <span><i class="hide d-md-block  fa-solid fa-list"></i></span>
+                <span><i class="hide d-md-block  fa-solid fa-circle-question"></i></span>
+                <span><i class="hide d-md-block  fa-solid fa-ellipsis-vertical"></i></span>
+                <span class="notify"><i class="fa-solid fa-bell"></i></span>
+              </div>
+            </div>
+          </div>
+
+<!-- 
           <div class="logo-section">
-            <img src="./assets/img/logo.svg" alt="">
+            <div class="logo-desktop">
+              <img class="hide d-md-block object-fit-contain  " src="./assets/img/logo.svg" alt="">
+            </div>
+            <div class="logo-small">
+              <img class="d-md-none object-fit-contain " src="./assets/img/mobile-logo.png" alt="">
+            </div>
           </div>
 
           <form class="search-bar" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            
           </form>
 
-          <!-- icon -->
           
             <div class="icon-section">
               <span><i class="fa-solid fa-list"></i></span>
               <span><i class="fa-solid fa-circle-question"></i></span>
               <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
               <span class="notify"><i class="fa-solid fa-bell"></i></span>
-            </div>
-          <!-- /icon -->
+            </div> -->
+
         </div>
       </nav>
 
@@ -84,19 +119,36 @@
         <section class="prospetto w-100 ">
           <div class="container-fluid">
             <div class="row">
-              <div class="col col-7 d-flex justify-content-between ">
+              <div class="col col-8 d-flex justify-content-between text-white fs-4 p-3">
                 <!-- PARTE SINISTRA -->
                 <div class="boolean">
-                  BOOLEAN
+                  <div class="">
+                    <span class="mx-2 ">Boolean</span>
+                    <span class="badge rounded-pill pills">Piano blaze</span>
+                  </div>
+                  <div class="">
+                    <span class="badge rounded-pill pills">3 app</span>
+                    <i class="fa-solid fa-angles-right"></i>
+                    <span class="badge rounded-pill pills d-md-none "><i class="fa-solid fa-plus"></i></span>
+                    <span class="badge rounded-pill pills hide d-md-inline-block ">Boolean mobile app</span>
+                    <span class="badge rounded-pill pills hide d-md-inline-block ">Boolean web app</span>
+                    <span class="badge rounded-pill pills hide d-md-inline-block ">Boolean blog app</span>
+
+                  </div>
                 </div>
                 <!-- PARTE DESTRA -->
                 <div class="contatore">
-                  studenti online
+                  <span>Studenti online negli ultimi 30 minuti</span>
+                  <h4>125</h4>
                 </div>
               </div>
-              <div class="col col-5 d-flex justify-content-center ">
-                <div class="new-student">
-                  Nuovo studente
+              <div class="col col-4 d-flex justify-content-center  text-white fs-4 p-3">
+                <div class="new-student  ">
+                  <span>
+                    Nuovo Studente
+                    <button type="button" class="btn btn-outline-light px-2 py-1 ms-2"><i class="fa-solid fa-plus"></i></button>
+                    
+                  </span>
                 </div>
               </div>
             </div>
@@ -121,19 +173,19 @@
                     <!-- tabella -->
                     <!-- HEAD -->
                     <div class="row w-100 flex-wrap flex-shrink-1">
-                      <div class="col col-6">
+                      <div class="col col-sm-4 col-lg-6 ">
                         Nome
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col hide d-md-block col-md-2 ">
                         Data inizio
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col hide d-md-block col-md-1">
                         ROI
                       </div>
-                      <div class="col col-1  text-center">
+                      <div class="col col-sm-4 col-md-3 col-lg-1 text-center ">
                         Stato
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col col-sm-4 col-md-2  col-lg-2 text-center ">
                         Azioni
                       </div>
                     </div>
@@ -142,7 +194,7 @@
                     <!-- RIGA 1 -->
 
                     <div class="row w-100 flex-wrap flex-shrink-1">
-                      <div class="col col-6">
+                      <div class="col col-sm-4 col-lg-6 ">
                         <div class="d-flex">
                           <div class="class-icon">
                             <img src="./assets/img/class-avatar.jpg" alt="">
@@ -150,21 +202,21 @@
                           <span class="mx-3">Classe 75</span>
                         </div>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col hide d-md-block col-md-2 ">
                         15 Feb 2021
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col hide d-md-block col-md-1">
                         20%
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col col-sm-4 col-md-3 col-lg-1 text-center">
                         <span class="badge text-bg-success">Done</span>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col col-sm-4 col-md-2  col-lg-2 text-center ">
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                          <i class="fa-solid fa-pen"></i>
+                          <i class="fa-solid fa-trash"></i>
                         </button>
                       </div>
                     </div>
@@ -173,7 +225,7 @@
 
                     <!-- RIGA 2 -->
                     <div class="row w-100 flex-wrap flex-shrink-1">
-                      <div class="col col-6">
+                      <div class="col col-sm-4 col-lg-6 ">
                         <div class="d-flex">
                           <div class="class-icon">
                             <img src="./assets/img/class-avatar.jpg" alt="">
@@ -181,21 +233,21 @@
                           <span class="mx-3">Classe 76</span>
                         </div>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col hide d-md-block col-md-2 ">
                         16 Feb 2021
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col hide d-md-block col-md-1">
                         20%
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col col-sm-4 col-md-3 col-lg-1 text-center">
                         <span class="badge text-bg-success">Done</span>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col col-sm-4 col-md-2  col-lg-2 text-center ">
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                          <i class="fa-solid fa-pen"></i>
+                          <i class="fa-solid fa-trash"></i>
                         </button>
                       </div>
                     </div>
@@ -204,7 +256,7 @@
 
                     <!-- RIGA 3 -->
                     <div class="row w-100 flex-wrap flex-shrink-1">
-                      <div class="col col-6">
+                      <div class="col col-sm-4 col-lg-6 ">
                         <div class="d-flex">
                           <div class="class-icon">
                             <img src="./assets/img/class-avatar.jpg" alt="">
@@ -212,21 +264,21 @@
                           <span class="mx-3">Classe 77</span>
                         </div>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col hide d-md-block col-md-2 ">
                         17 Feb 2021
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col hide d-md-block col-md-1">
                         20%
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col col-sm-4 col-md-3 col-lg-1 text-center">
                         <span class="badge text-bg-warning text-white ">Process</span>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col col-sm-4 col-md-2  col-lg-2 text-center ">
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                          <i class="fa-solid fa-pen"></i>
+                          <i class="fa-solid fa-trash"></i>
                         </button>
                       </div>
                     </div>
@@ -234,7 +286,7 @@
                     <!-- /RIGA 3 -->
                     <!-- RIGA 4 -->
                     <div class="row w-100 flex-wrap flex-shrink-1">
-                      <div class="col col-6">
+                      <div class="col col-sm-4 col-lg-6 ">
                         <div class="d-flex">
                           <div class="class-icon">
                             <img src="./assets/img/class-avatar.jpg" alt="">
@@ -242,21 +294,21 @@
                           <span class="mx-3">Classe 78</span>
                         </div>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col hide d-md-block col-md-2 ">
                         18 Feb 2021
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col hide d-md-block col-md-1">
                         20%
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col col-sm-4 col-md-3 col-lg-1 text-center">
                         <span class="badge text-bg-success">Done</span>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col col-sm-4 col-md-2  col-lg-2 text-center ">
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                          <i class="fa-solid fa-pen"></i>
+                          <i class="fa-solid fa-trash"></i>
                         </button>
                       </div>
                     </div>
@@ -264,7 +316,7 @@
                     <!-- /RIGA 4 -->
                     <!-- RIGA 5 -->
                     <div class="row w-100 flex-wrap flex-shrink-1">
-                      <div class="col col-6">
+                      <div class="col col-sm-4 col-lg-6 ">
                         <div class="d-flex">
                           <div class="class-icon">
                             <img src="./assets/img/class-avatar.jpg" alt="">
@@ -272,21 +324,21 @@
                           <span class="mx-3">Classe 79</span>
                         </div>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col hide d-md-block col-md-2 ">
                         19 Feb 2021
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col hide d-md-block col-md-1">
                         20%
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col col-sm-4 col-md-3 col-lg-1 text-center">
                         <span class="badge text-bg-danger">Failed</span>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col col-sm-4 col-md-2  col-lg-2 text-center ">
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                          <i class="fa-solid fa-pen"></i>
+                          <i class="fa-solid fa-trash"></i>
                         </button>
                       </div>
                     </div>
@@ -294,7 +346,7 @@
                     <!-- /RIGA 5 -->
                     <!-- RIGA 6 -->
                     <div class="row w-100 flex-wrap flex-shrink-1">
-                      <div class="col col-6">
+                      <div class="col col-sm-4 col-lg-6 ">
                         <div class="d-flex">
                           <div class="class-icon">
                             <img src="./assets/img/class-avatar.jpg" alt="">
@@ -302,21 +354,21 @@
                           <span class="mx-3">Classe 80</span>
                         </div>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col hide d-md-block col-md-2 ">
                         20 Feb 2021
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col hide d-md-block col-md-1">
                         20%
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col col-sm-4 col-md-3 col-lg-1 text-center">
                         <span class="badge text-bg-success">Done</span>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col col-sm-4 col-md-2  col-lg-2 text-center ">
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                          <i class="fa-solid fa-pen"></i>
+                          <i class="fa-solid fa-trash"></i>
                         </button>
                       </div>
                     </div>
@@ -324,7 +376,7 @@
                     <!-- /RIGA 6 -->
                     <!-- RIGA 7 -->
                     <div class="row w-100 flex-wrap flex-shrink-1">
-                      <div class="col col-6">
+                      <div class="col col-sm-4 col-lg-6 ">
                         <div class="d-flex">
                           <div class="class-icon">
                             <img src="./assets/img/class-avatar.jpg" alt="">
@@ -332,21 +384,21 @@
                           <span class="mx-3">Classe 81</span>
                         </div>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col hide d-md-block col-md-2 ">
                         21 Feb 2021
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col hide d-md-block col-md-1">
                         20%
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col col-sm-4 col-md-3 col-lg-1 text-center">
                         <span class="badge text-bg-danger">Failed</span>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col col-sm-4 col-md-2  col-lg-2 text-center ">
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                          <i class="fa-solid fa-pen"></i>
+                          <i class="fa-solid fa-trash"></i>
                         </button>
                       </div>
                     </div>
@@ -354,7 +406,7 @@
                     <!-- /RIGA 7 -->
                     <!-- RIGA 8 -->
                     <div class="row w-100 flex-wrap flex-shrink-1">
-                      <div class="col col-6">
+                      <div class="col col-sm-4 col-lg-6 ">
                         <div class="d-flex">
                           <div class="class-icon">
                             <img src="./assets/img/class-avatar.jpg" alt="">
@@ -362,21 +414,21 @@
                           <span class="mx-3">Classe 82</span>
                         </div>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col hide d-md-block col-md-2 ">
                         22 Feb 2021
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="ccol hide d-md-block col-md-1">
                         20%
                       </div>
-                      <div class="col col-1 text-center">
+                      <div class="col col-sm-4 col-md-3 col-lg-1 text-center">
                         <span class="badge text-bg-success">Done</span>
                       </div>
-                      <div class="col col-2 text-center">
+                      <div class="col col-sm-4 col-md-2  col-lg-2 text-center ">
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                          <i class="fa-solid fa-pen"></i>
+                          <i class="fa-solid fa-trash"></i>
                         </button>
                       </div>
                     </div>
@@ -450,7 +502,7 @@
 
                       <div class="check-btn mb-3">
 
-                        <div class="separatore-box p-1 ">
+                        <div class="separatore-box p-1 ms-2">
                           <div class="form-check">
                             <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label " for="flexCheckDefault">
@@ -459,7 +511,7 @@
                           </div>
 
                         </div>
-                        <div class="separatore-box p-1 ">
+                        <div class="separatore-box p-1 ms-2">
                           <div class="form-check">
                             <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label " for="flexCheckDefault">
@@ -468,7 +520,7 @@
                           </div>
 
                         </div>
-                        <div class="p-1">
+                        <div class="p-1 ms-2">
                           <div class="form-check">
                             <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label " for="flexCheckDefault">
@@ -486,7 +538,7 @@
                   <!-- /TODO -->
 
                   <!-- GRAFICO -->
-                  <div class="box graphic w-100 p-4">
+                  <div class="box graphic w-100 p-3">
                     <div class="box w-100 ">
                       <img class="p-3 " src="./assets/img/stats.jpeg" alt="">
 

@@ -6,14 +6,38 @@
   --box-border-color: #E8E8E8;
   --separatore-tab: #DEE2E6;
   --btn-color: #6C757D;
+  --aside-color: #142a40;
+  --bg-pills: #165BBA;
+  --place-holder-color: #7D7D7D;
 }
 
+.bg-white{
+  background-color: white;
+}
+.search-bar{
+  background-color: #E5E5E5;
+}
+.search-bar input,
+.search-bar textarea{
+  background-color: #E5E5E5;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+
+.search-bar input::placeholder,
+.search-bar textarea::placeholder {
+  color: var(--place-holder-color);
+} 
+
+
 /* debug */
-[class^="container"],
+/* [class^="container"],
 .debug{
   background-color: rgba(144, 238, 144, 0.3);
   border: 1px solid black;
-}
+} */
 /* /debug */
 
 /* UTILITY */
@@ -21,13 +45,17 @@
   margin: 0 auto;
 }
 .bp-container{
-  width: 92%;
+  /* width: 92%; */
   margin-left: 100px;
 }
 
 .aside-container{
- overflow: auto;
+  overflow: auto;
   /* height: 100vh; */
+}
+
+.v-al-mid{
+  vertical-align: middle;
 }
 /* /UTILITY */
 
@@ -42,26 +70,48 @@ body{
 
 /* HEADER */
 header{
-  height: 56px;
+  height: 50px;
 }
 
 .notify{
   color: var(--notify);
 }
 
-.logo-section,
-.icon-section{
-  width: 10%;
+.logo-section{
+  position: absolute;
 }
 
-.search-bar{
-  width: 80%;
+.logo-desktop,
+.logo-small{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+.logo-section,
+.logo-desktop{
+  width: 110px;
+}
+
+.logo-section .logo-desktop,
+.logo-section .logo-small{
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-section .logo-small{
+  width: 30px;
+}
+
+/* .search-bar{
+  width: 75%;
+} */
 /* HEADER */
 
 /* MENU ASIDE */
 .aside-menu{
-  background-color: #FF9106;
+  background-color: var(--aside-color);
+  background-image: url(../img/sidebar-bg.png);
   max-width: 120px;
   height: 100vh;
 
@@ -81,6 +131,20 @@ header{
 /* TOP-BAR */
 .bp-container .prospetto{
   background-color: var(--bg-prospetto);
+}
+
+.pills{
+  background-color: var(--bg-pills);
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.prospetto .boolean i{
+  font-size: .8rem;
+}
+
+.dashboard .prospetto span{
+  font-size: .8rem;
 }
 /* /TOP-BAR */
 
@@ -153,6 +217,10 @@ header{
 .graphic .box p{
   font-size: .8rem;
   margin-bottom: 0;
+}
+
+.hide{
+  display: none;
 }
 /* /GRAFICO */
 /* /CONTENUTO DASHBOARD */
