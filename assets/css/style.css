@@ -87,7 +87,7 @@ header{
 /* BOX */
 .box{
   background-color: white;
-  border: 1px solid var(--box-border-color) ;
+  border: 1px solid var(--separatore-tab) ;
   border-radius: 10px;
   margin-bottom: 25px;
   
@@ -98,6 +98,7 @@ header{
   padding: 10px 15px 0;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid var(--separatore-tab);
 }
 
 .box-content{
@@ -136,4 +137,22 @@ header{
 }
 /* /Tabella */
 
+/* TODO */
+.check-btn{
+  border: 1px solid var(--box-border-color);
+  border-radius: 5px;
+}
+
+.separatore-box{
+  
+  border-bottom: 1px solid var(--box-border-color);
+}
+/* /TODO */
+
+/* GRAFICO */
+.graphic .box p{
+  font-size: .8rem;
+  margin-bottom: 0;
+}
+/* /GRAFICO */
 /* /CONTENUTO DASHBOARD */
