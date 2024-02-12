@@ -1,0 +1,69 @@
+:root{
+  --bg: #F8F9FA;
+  --notify: #FF9106;
+}
+
+/* debug */
+[class^="container"],
+.debug{
+  background-color: rgba(144, 238, 144, 0.3);
+  border: 1px solid black;
+}
+/* /debug */
+
+/* UTILITY */
+.bp-container{
+
+}
+
+.aside-container{
+ overflow: auto;
+  /* height: 100vh; */
+}
+/* /UTILITY */
+
+img{
+  width: 100%;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg);
+}
+
+/* HEADER */
+header{
+  height: 56px;
+}
+
+.notify{
+  color: var(--notify);
+}
+
+.logo-section,
+.icon-section{
+  width: 10%;
+}
+
+.search-bar{
+  width: 80%;
+}
+/* HEADER */
+
+/* MENU ASIDE */
+.aside-menu{
+  background-color: #FF9106;
+  max-width: 120px;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.aside-menu .aside-container .row{
+  height: 90%;
+  width: 120px;
+}
+/* /MENU ASIDE */
