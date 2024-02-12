@@ -1,6 +1,7 @@
 :root{
   --bg: #F8F9FA;
   --notify: #FF9106;
+  --bg-prospetto: #1B72E8;
 }
 
 /* debug */
@@ -13,7 +14,8 @@
 
 /* UTILITY */
 .bp-container{
-
+  width: 100%;
+  margin-left: 100px;
 }
 
 .aside-container{
@@ -64,6 +66,12 @@ header{
 
 .aside-menu .aside-container .row{
   height: 90%;
-  width: 120px;
+  width: 124px;
 }
 /* /MENU ASIDE */
+
+/* CONTENUTO DASHBOARD */
+.bp-container .prospetto{
+  background-color: var(--bg-prospetto);
+}
+/* /CONTENUTO DASHBOARD */
