@@ -16,6 +16,8 @@
 }
 .search-bar{
   background-color: #E5E5E5;
+  border-radius: 5px;
+  width: 100%;
 }
 .search-bar input,
 .search-bar textarea{
@@ -23,7 +25,20 @@
   border-top: none;
   border-right: none;
   border-left: none;
-  border-radius: 0;
+  border-radius: 5px;
+}
+
+.form-control:focus{
+  background-color: var(--box-border-color);
+  border: none;
+  box-shadow: none;
+}
+.icon-seach{
+  padding: 5px;
+}
+
+.placeholder-fs{
+  font-size: .8rem;
 }
 
 .search-bar input::placeholder,
@@ -105,6 +120,16 @@ header{
 
 .logo-section .logo-small{
   width: 30px;
+}
+
+.form-control{
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.aside-icon{
+  width: 25px;
+  height: 25px;
 }
 
 .admin{
