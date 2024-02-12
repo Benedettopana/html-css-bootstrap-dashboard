@@ -2,6 +2,10 @@
   --bg: #F8F9FA;
   --notify: #FF9106;
   --bg-prospetto: #1B72E8;
+  --bg-box-title: #F7F7F7;
+  --box-border-color: #E8E8E8;
+  --separatore-tab: #DEE2E6;
+  --btn-color: #6C757D;
 }
 
 /* debug */
@@ -14,7 +18,7 @@
 
 /* UTILITY */
 .bp-container{
-  width: 100%;
+  width: 92%;
   margin-left: 100px;
 }
 
@@ -71,7 +75,70 @@ header{
 /* /MENU ASIDE */
 
 /* CONTENUTO DASHBOARD */
+/* TOP-BAR */
 .bp-container .prospetto{
   background-color: var(--bg-prospetto);
 }
+/* /TOP-BAR */
+
+/* BOX */
+.box{
+  background-color: white;
+  border: 1px solid var(--box-border-color) ;
+  border-radius: 10px;
+  
+}
+
+.box-title{
+  background-color: var(--bg-box-title);
+  padding: 10px 15px 0;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.box-content{
+  padding: 10px 15px 0;
+}
+/* /BOX */
+
+/* STAT */
+.bp-container .stat{
+  
+}
+/* 
+.class{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+} */
+/* 
+.todo{
+  width: 35%;
+} */
+/* /STAT */
+
+/* Tabella */
+.class-icon{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* .box-content .row{
+  margin: 0 20px 0 10px;
+  border-bottom: 2px solid var(--separatore-tab);
+} */
+
+.separatore-tab{
+  width: 95%;
+  border-bottom: 1px solid var(--separatore-tab);
+  margin: 10px 0;
+}
+
+.btn-clr{
+  color: var(--btn-color);
+}
+/* /Tabella */
+
 /* /CONTENUTO DASHBOARD */
