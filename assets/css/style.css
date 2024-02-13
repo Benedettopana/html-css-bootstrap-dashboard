@@ -170,6 +170,14 @@ header{
   background-color: var(--bg-pills);
   font-size: .8rem;
   font-weight: 300;
+  border: none;
+  font-size: .8rem;
+  /* padding: 2px 5px; */
+  cursor: pointer;
+}
+
+.pills:hover{
+  background-color: rgb(49, 49, 192);
 }
 
 .prospetto .boolean i{
