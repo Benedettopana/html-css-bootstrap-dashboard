@@ -68,6 +68,7 @@
   height: calc(100vh - 50px);
   width: calc(100vw - 105px);
   margin-left: 105px;
+  scroll-behavior: smooth;
 }
 
 .aside-container{
@@ -96,7 +97,7 @@ body{
 
 .dashboard{
   overflow: auto;
-  scroll-behavior: smooth;
+  
 }
 
 /* HEADER */
