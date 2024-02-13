@@ -89,6 +89,12 @@ img{
 body{
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg);
+ 
+}
+
+.dashboard{
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
 /* HEADER */
@@ -129,6 +135,11 @@ header{
 .form-control{
   border-radius: 5px;
   overflow: hidden;
+}
+
+.posiz{
+  right: 40px !important;
+  top: 32px !important;
 }
 
 .aside-icon{
