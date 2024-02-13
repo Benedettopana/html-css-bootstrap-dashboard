@@ -303,5 +303,8 @@ header{
     width: 0%;
   }
 
+  .offcanv-full{
+    width: 100% !important;
+  }
   
 }
