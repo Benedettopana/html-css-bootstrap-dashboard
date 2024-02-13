@@ -147,6 +147,12 @@ header{
   height: 25px;
 }
 
+.aside-menu li:hover .element,
+.admin:hover .element{
+  background-color: white;
+  color: black;
+}
+
 .admin{
   height: 80%;
 }
@@ -317,5 +323,20 @@ header{
   .offcanv-full{
     width: 100% !important;
   }
+
+  .aside-menu{
+    max-width: 70px;
+    
+  }
+  .aside-menu .element{
+    margin-right: 28px;
+  }
+
+  .bp-container{
+    /* width: 92%; */
+    margin-left: 70px;
+  }
+
+  
   
 }
