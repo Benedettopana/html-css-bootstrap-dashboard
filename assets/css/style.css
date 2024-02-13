@@ -37,6 +37,10 @@
   padding: 5px;
 }
 
+.icon-section i{
+  cursor: pointer;
+}
+
 .placeholder-fs{
   font-size: .8rem;
 }
@@ -265,3 +269,39 @@ header{
 }
 /* /GRAFICO */
 /* /CONTENUTO DASHBOARD */
+
+.tab-name{
+  width: 50%;
+}
+
+.tab-date{
+  width: 20%;
+}
+
+.tab-roi{
+  width: 5%;
+}
+
+.tab-state{
+  width: 10%;
+}
+
+.tab-action{
+  width: 15%;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 767px){
+  .tab-name,
+  .tab-state,
+  .tab-action{
+    width: calc(100%/3);
+  }
+
+  .tab-date,
+  .tab-roi{
+    width: 0%;
+  }
+
+  
+}
