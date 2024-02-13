@@ -65,6 +65,8 @@
 }
 .bp-container{
   /* width: 92%; */
+  height: calc(100vh - 50px);
+  width: calc(100vw - 105px);
   margin-left: 105px;
 }
 
@@ -333,10 +335,10 @@ header{
   }
 
   .bp-container{
-    /* width: 92%; */
+    width: calc(100vw - 70px);
     margin-left: 70px;
   }
 
-  
+
   
 }
